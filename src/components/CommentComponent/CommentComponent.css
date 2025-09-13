@@ -1,0 +1,23 @@
+body{
+    font-size: 18px;
+}
+
+.comments{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.comment__info{
+    max-width: 500px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
