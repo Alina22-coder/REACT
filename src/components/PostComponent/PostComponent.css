@@ -1,0 +1,15 @@
+body{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+}
+
+div{
+    border-bottom: 2px solid lightsteelblue;
+}
