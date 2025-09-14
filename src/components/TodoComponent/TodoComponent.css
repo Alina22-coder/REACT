@@ -1,0 +1,26 @@
+.todo__title{
+    background-color: dodgerblue;
+}
+
+.todo__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+
+}
+
+.todo__wrap{
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid dodgerblue;
+
+}
+
+.todo__list{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}

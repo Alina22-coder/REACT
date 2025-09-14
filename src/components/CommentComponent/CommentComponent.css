@@ -1,0 +1,26 @@
+.comment__title{
+    background-color: lightpink;
+}
+
+.comment__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.comment__wrap{
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid lightpink;
+
+}
+
+.comment__list{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+

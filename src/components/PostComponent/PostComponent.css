@@ -1,0 +1,16 @@
+.post__title{
+    background-color: grey;
+}
+
+.post__wrap{
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.post__list{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
