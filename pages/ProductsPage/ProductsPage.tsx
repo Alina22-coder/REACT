@@ -1,7 +1,7 @@
 export const ProductsPage = () => {
     return (
         <div>
-            Products Page
+            <h2> Products Page</h2>
         </div>
     );
 };
