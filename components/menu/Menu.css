@@ -1,0 +1,15 @@
+body{
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+li{
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
