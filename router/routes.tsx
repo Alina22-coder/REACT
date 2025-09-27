@@ -10,7 +10,8 @@ import {UsersJsonplaceholderComponent} from "../components/UsersComponent/UsersJ
 import {UsersDummyjsonComponent} from "../components/UsersComponent/UsersDummyjsonComponent/UsersDummyjsonComponent.tsx";
 import {PostsJsonplaceholderComponent} from "../components/PostsComponent/PostsJsonplaceholderComponent/PostsJsonplaceholderComponent.tsx";
 import {PostsDummyjsonComponent} from "../components/PostsComponent/PostsDummyjsonComponent/PostsDummyjsonComponent.tsx";
-import {CommentsJsonplaceholderComponent} from "../components/CommentsJsonplaceholderComponent/CommentsJsonplaceholderComponent.tsx";
+import {CommentsJsonplaceholderComponent} from "../components/CommentsComponent/CommentsJsonplaceholderComponent/CommentsJsonplaceholderComponent.tsx";
+import {CommentsDummyjsonComponent} from "../components/CommentsComponent/CommentsDummyjsonComponent/CommentsDummyjsonComponent.tsx";
 
 
 export const routes = createBrowserRouter([
@@ -30,7 +31,8 @@ export const routes = createBrowserRouter([
                 ]},
             {path: 'comments', element: <CommentsPage/>,
                 children: [
-                    {path:'jsonplaceholder', element: <CommentsJsonplaceholderComponent/>}
+                    {path:'jsonplaceholder', element: <CommentsJsonplaceholderComponent/>},
+                    {path:'dummyjson', element:<CommentsDummyjsonComponent/>}
                 ]},
             {path: 'products', element: <ProductsPage/>}
         ]
