@@ -1,0 +1,44 @@
+.user-dummyjson__title,
+.home-page__title,
+.users-page__title,
+.users-jsonplaceholder__title{
+    font-size: 20px;
+    background-color: lightsteelblue;
+}
+
+.user-jsonplaceholder__list,
+.user-dummyjson__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-jsonplaceholder__item,
+.user-dummyjson__item{
+    border: none;
+    border-radius: 0;
+}
+
+.user-dummyjson__link span,
+.user-jsonplaceholder__link span{
+    color: blue;
+}
+
+.user-dummyjson__item .user-dummyjson__list,
+.user-jsonplaceholder__item .user-jsonplaceholder__list {
+    border: 1px solid lightsteelblue;
+    border-radius: 20px;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+
+.user-dummyjson__img{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.user-dummyjson__list,
+.user-jsonplaceholder__list{
+    border-bottom: 1px solid lightsteelblue ;
+}
