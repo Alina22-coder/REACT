@@ -41,8 +41,6 @@ export const UserComponent:FC<UsersPropType> = ({user:{id, name, username, email
                     <a className="user-jsonplaceholder__link" href={`https://${website}`} target="_blank">Website: <span>{website}</span></a>
                 </li>
             </ul>
-
-
         </div>
     );
 }

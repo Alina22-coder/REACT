@@ -6,12 +6,15 @@ import {PostsPage} from "../pages/PostsPage/PostsPage.tsx";
 import {CommentsPage} from "../pages/CommentsPage/CommentsPage.tsx";
 import {ProductsPage} from "../pages/ProductsPage/ProductsPage.tsx";
 
-import {UsersJsonplaceholderComponent} from "../components/UsersComponent/UsersJsonplaceholderComponent/UsersJsonplaceholderComponent.tsx";
+import {UsersJsonplaceholderComponent} from "../components/UsersComponent/UsersJsonplaceholderComponent/UsersJSONPlaceholderComponent.tsx";
 import {UsersDummyjsonComponent} from "../components/UsersComponent/UsersDummyjsonComponent/UsersDummyjsonComponent.tsx";
 import {PostsJsonplaceholderComponent} from "../components/PostsComponent/PostsJsonplaceholderComponent/PostsJsonplaceholderComponent.tsx";
 import {PostsDummyjsonComponent} from "../components/PostsComponent/PostsDummyjsonComponent/PostsDummyjsonComponent.tsx";
 import {CommentsJsonplaceholderComponent} from "../components/CommentsComponent/CommentsJsonplaceholderComponent/CommentsJsonplaceholderComponent.tsx";
 import {CommentsDummyjsonComponent} from "../components/CommentsComponent/CommentsDummyjsonComponent/CommentsDummyjsonComponent.tsx";
+
+
+
 
 
 export const routes = createBrowserRouter([
