@@ -1,12 +1,11 @@
-import type {ReactionsCommentsDummyjsonArrModel} from "./ReactionsCommentsDummyjsonArrModel.ts";
+import type {UserCommentsDummyjsonArrModel} from "./UserCommentsDummyjsonArrModel.ts";
 
 export interface CommentsDummyjsonArrModel {
     id: number,
-    title: string,
     body: string,
-    tags: string[],
-    reactions: ReactionsCommentsDummyjsonArrModel,
-    views: number,
-    userId: number
+    postId: number,
+    likes: number,
+    user: UserCommentsDummyjsonArrModel
 }
+
 

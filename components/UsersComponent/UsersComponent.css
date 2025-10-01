@@ -18,7 +18,8 @@ li{
 .post-dummyjson__title,
 
 .comments-page__title,
-.comments-jsonplaceholder__title
+.comments-jsonplaceholder__title,
+.comments-dummyjson__title
 {
     font-size: 20px;
     background-color: lightsteelblue;
@@ -26,8 +27,10 @@ li{
 
 .user-jsonplaceholder__list,
 .user-dummyjson__list,
+
 .post-jsonplaceholder__list,
 .post-dummyjson__list,
+
 .comment-jsonplaceholder__list,
 .comment-dummyjson__list{
     display: flex;
@@ -37,8 +40,10 @@ li{
 
 .user-jsonplaceholder__item,
 .user-dummyjson__item,
+
 .post-jsonplaceholder__item,
 .post-dummyjson__item,
+
 .comment-jsonplaceholder__item,
 .comment-dummyjson__item{
     border: none;
@@ -55,7 +60,10 @@ li{
 
 .user-dummyjson__item .user-dummyjson__list,
 .user-jsonplaceholder__item .user-jsonplaceholder__list,
-.post-dummyjson__item .post-dummyjson__list {
+
+.post-dummyjson__item .post-dummyjson__list,
+
+.comment-dummyjson__item .comment-dummyjson__list {
     border: 1px solid lightsteelblue;
     border-radius: 20px;
     margin-bottom:0;
