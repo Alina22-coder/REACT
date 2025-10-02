@@ -4,6 +4,7 @@ import type {PostsJsonplaceholderModel} from "../models/PostsModel/PostsJsonplac
 import type {PostsDummyjsonArrModel} from "../models/PostsModel/PostsDummyjsonModel/PostsDummyjsonArrModel.ts";
 import type {CommentsJsonplaceholderModel} from "../models/CommentsModel/CommentsJsonplaceholderModel/CommentsJsonplaceholderModel.ts";
 import type {CommentsDummyjsonArrModel} from "../models/CommentsModel/CommentsDummyjsonModel/CommentsDummyjsonArrModel.ts";
+import type {CartArrModel} from "../models/CartsModel/CartArrModel.ts";
 
 
 // --------------------------------------------------USERS--------------------------------------------------
@@ -20,9 +21,18 @@ export const loadUsersDummyjson = async ():Promise<UsersDummyjsonArrModel[]> => 
     console.log("FETCH URL:", usersDummyjsonUrl, "STATUS:", responseUserDummyjson.status);
     const responseUserDummy = await responseUserDummyjson.json();
     return responseUserDummy.users;
-
 }
 
+const cartsUsersDummyjsonUrl = import.meta.env.VITE_API_BASE_DUMMYJSON_URL + '/carts/user/';
+export const loadCartsUsersDummyjson ={
+    getCartsOfUser: async (id:string):Promise<CartArrModel[]> => {
+        const responseCartsUsersDummyjson = await fetch(cartsUsersDummyjsonUrl + id);
+        console.log(responseCartsUsersDummyjson)
+        console.log("FETCH URL:", cartsUsersDummyjsonUrl, "STATUS:", responseCartsUsersDummyjson.status);
+        const responseCartsUsersDummy = await responseCartsUsersDummyjson.json();
+        return responseCartsUsersDummy.carts;
+    }
+}
 
 // --------------------------------------------------POSTS--------------------------------------------------
 const postsJsonplaceholderUrl = import.meta.env.VITE_API_BASE_URL + '/posts';

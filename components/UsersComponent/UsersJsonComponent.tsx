@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import type {UsersJsonplaceholderModel} from "../../models/UsersModel/UsersJsonplaceholderModel/UsersJsonplaceholderModel.ts";
 import {UserComponent} from "../UserComponent/UserComponent.tsx";
 import {loadUsersJsonplaceholder} from "../../serviсe/api.serviсe.ts";
-import "./UsersComponent.css";
+import "./style.css";
 
 export const UsersJsonComponent = () => {
     console.log("UsersJsonComponent rendered");

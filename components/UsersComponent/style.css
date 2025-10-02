@@ -6,17 +6,46 @@ li{
     border: 1px solid lightsteelblue;
 }
 
+img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+button {
+    background-color: lightsteelblue;
+    border: 1px solid lightsteelblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid lightsteelblue;
+    transition: background-color 0.3s;
+}
+
+.user-dummyjson__button-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.user-dummyjson__wrap{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border: 1px solid lightsteelblue;
+}
 
 .home-page__title,
-
 .users-page__title,
 .users-jsonplaceholder__title,
 .user-dummyjson__title,
-
+.carts-page__title,
 .posts-page__title,
 .posts-jsonplaceholder__title,
 .post-dummyjson__title,
-
 .comments-page__title,
 .comments-jsonplaceholder__title,
 .comments-dummyjson__title
@@ -27,10 +56,9 @@ li{
 
 .user-jsonplaceholder__list,
 .user-dummyjson__list,
-
+.cart-dummyjson__list,
 .post-jsonplaceholder__list,
 .post-dummyjson__list,
-
 .comment-jsonplaceholder__list,
 .comment-dummyjson__list{
     display: flex;
@@ -40,10 +68,9 @@ li{
 
 .user-jsonplaceholder__item,
 .user-dummyjson__item,
-
+.cart-dummyjson__item,
 .post-jsonplaceholder__item,
 .post-dummyjson__item,
-
 .comment-jsonplaceholder__item,
 .comment-dummyjson__item{
     border: none;
@@ -52,7 +79,6 @@ li{
 
 .user-dummyjson__link span,
 .user-jsonplaceholder__link span,
-
 .comment-dummyjson__link span,
 .comment-jsonplaceholder__link span{
     color: blue;
@@ -60,19 +86,22 @@ li{
 
 .user-dummyjson__item .user-dummyjson__list,
 .user-jsonplaceholder__item .user-jsonplaceholder__list,
-
 .post-dummyjson__item .post-dummyjson__list,
-
-.comment-dummyjson__item .comment-dummyjson__list {
+.comment-dummyjson__item .comment-dummyjson__list,
+.cart-dummyjson__item li{
     border: 1px solid lightsteelblue;
     border-radius: 20px;
     margin-bottom:0;
     margin-top: 10px;
 }
 
-.user-dummyjson__img{
-    max-width: 100px;
-    max-height: 100px;
-    object-fit: cover;
+ul.cart-dummyjson__list {
+    border-bottom: none;
+}
+
+.cart-dummyjson__text{
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
 }
 

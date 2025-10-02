@@ -5,7 +5,9 @@ import type {UsersDummyjsonArrModel} from "../../models/UsersModel/UsersDummyjso
 
 export const UsersDummyComponent = () => {
     console.log("UsersDummyComponent rendered");
+
     const [usersDummy, setUsersDummy] = useState<UsersDummyjsonArrModel[]>([]);
+
     useEffect(() => {
         loadUsersDummyjson()
             .then(usersDummy => {
