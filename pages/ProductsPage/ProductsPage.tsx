@@ -1,7 +1,7 @@
 export const ProductsPage = () => {
     return (
         <div>
-            <h2> Products Page</h2>
+            <h2 className='products-page__title'> Products Page</h2>
         </div>
     );
 };

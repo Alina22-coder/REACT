@@ -1,5 +1,6 @@
 import type {FC} from "react";
 import type {UsersDummyjsonArrModel} from "../../models/UsersModel/UsersDummyjsonModel/UsersDummyjsonArrModel.ts";
+import {useNavigate} from "react-router-dom";
 
 type UserDummyPropType ={
     userDummy:UsersDummyjsonArrModel
@@ -7,6 +8,13 @@ type UserDummyPropType ={
 
 export const UserDummyComponent:FC<UserDummyPropType> = ({userDummy:{id, firstName, lastName,maidenName,age,gender,email,username,password,birthDate,image,bloodGroup,height,
     weight,eyeColor,hair,ip,address,macAddress,university,bank,company,ein,ssn,userAgent,crypto,role}}) => {
+
+    const userNavigation = useNavigate();
+    const onButtonClickNavigate = () => {
+        console.log("Button clicked");
+        userNavigation(`carts/${id}`)
+    }
+
     return (
         <div className="user-dummyjson__wrap">
             <ul className="user-dummyjson__list">
@@ -26,10 +34,6 @@ export const UserDummyComponent:FC<UserDummyPropType> = ({userDummy:{id, firstNa
                 <li className="user-dummyjson__item">
                     <img className="user-dummyjson__img" src={image} alt={`${firstName} ${lastName}`}/>
                 </li>
-
-
-
-
                 <li className="user-dummyjson__item">Blood group: {bloodGroup}</li>
                 <li className="user-dummyjson__item">Height: {height}</li>
                 <li className="user-dummyjson__item">Weight: {weight}</li>
@@ -113,6 +117,9 @@ export const UserDummyComponent:FC<UserDummyPropType> = ({userDummy:{id, firstNa
                 </li>
                 <li className="user-dummyjson__item">Role: {role}</li>
             </ul>
+            <div className="user-dummyjson__button-wrap">
+                <button onClick={onButtonClickNavigate} className="user-dummyjson__button">Show user's cart</button>
+            </div>
         </div>
     );
 }
