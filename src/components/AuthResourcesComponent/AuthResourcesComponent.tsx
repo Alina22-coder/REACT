@@ -20,11 +20,17 @@ export const AuthResourcesComponent = () => {
             // якщо запит не вдалий, обробляємо помилку
             .catch(reason => {
                 console.log(reason)
-                 // Викликаємо функцію для оновлення токена
-                refresh()
-                    // після оновлення токена повторно підвантажуємо продукти
-                    .then(() => loadAuthProducts())
-                    .then(value => console.log(value));
+                try{
+                    // Викликаємо функцію для оновлення токена
+                    refresh()
+                        // після оновлення токена повторно підвантажуємо продукти
+                        .then(() => loadAuthProducts())
+                        .then(value => console.log(value));
+                }
+                catch (error) {
+                    console.log('Load after refresh failed', error)
+                }
+
         })
     }, []);//порожній масив означає, що ефект виконається лише один
 
