@@ -1,6 +1,11 @@
 //створюємо необхідну модель даних продуктів
 export interface IProduct {
-    id: string;
-    title: string;
-    price: number;
+    id: number
+    title: string
+    price: number
+    quantity: number
+    total: number
+    discountPercentage: number
+    discountedTotal: number
+    thumbnail: string
 }
