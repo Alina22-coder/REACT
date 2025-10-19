@@ -1,5 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import {RouterProvider} from "react-router-dom";
+import {routes} from "./router/routes.tsx";
 
-createRoot(document.getElementById('root')!).render(<App />)
+// створюємо кореневий React-додаток і рендеримо його в DOM
+createRoot(document.getElementById('root')!)
+    // використовуємо RouterProvider для підключення маршрутизатора до React-додатку
+    .render(<RouterProvider router={routes}/>)
