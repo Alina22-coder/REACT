@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 #root {
     max-width: 1440px;
     margin: 0 auto;
@@ -55,6 +54,12 @@ img{
     margin-bottom: 8px;
 
 }
+
+button{
+    text-align: start;
+    cursor: pointer;
+
+}
 .btn{
     font-family: SF Pro Display, sans-serif;
     font-weight: 400;
@@ -99,10 +104,11 @@ img{
 .active{
     color: #303030;
 }
+
+/*===========================КРАН=============================*/
 .wrapper{
     width: 710px;
     height: 100%;
-    background-image: url('../src/components/Commercial/bg-comm.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -110,9 +116,9 @@ img{
     position: absolute;
     overflow: hidden;
 }
-.bg-hotel{
-    background-image: url('../src/components/Hotels/bg-hotels.png');
-}
+
+
+
 .tap__wrap{
     width: 100%;
     position: absolute;
@@ -128,18 +134,18 @@ img{
 .hotels__wrap{
     width: 100%;
     position: absolute;
-    bottom: 133px;
+    bottom: 46px;
     left: 32px;
 }
 .hotels__wrap img{
     transform: scaleX(-1);
 }
-.commectial__wrap{
+.commertial__wrap{
     position: absolute;
     bottom: 291px;
     left: 30px;
 }
-.commectial__wrap img{
+.commertial__wrap img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -148,65 +154,65 @@ img{
 
 
 /*=====Animation=====*/
-.tap__wrap,
-.vector__wrap,
-.commectial__wrap {
-    animation: lift-up 5s forwards;
-}
+/*.tap__wrap,*/
+/*.vector__wrap,*/
+/*.commertial__wrap {*/
+/*    animation: lift-up 5s forwards;*/
+/*}*/
 
-.commectial__wrap ,.hotels__wrap {
-    animation: lift-down 5s forwards;
-}
-
-
-@keyframes lift-up {
-    0% {
-        transform: translateY(-700px);
-
-    }
-    50% {
-        transform: translateY(0);
-
-    }
-    100% {
-        transform: translateY(-700px);
-
-    }
-}
-
-@keyframes lift-down {
-    0% {
-        transform: translateY(-700px);
-
-    }
-    50% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+/*.commertial__wrap ,.hotels__wrap {*/
+/*    animation: lift-down 5s forwards;*/
+/*}*/
 
 
+/*@keyframes lift-up {*/
+/*    0% {*/
+/*        transform: translateY(-700px);*/
+
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(0);*/
+
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(-700px);*/
+
+/*    }*/
+/*}*/
+
+/*@keyframes lift-down {*/
+/*    0% {*/
+/*        transform: translateY(-700px);*/
+
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
 
 
 
-.lift-up {
-    animation: liftUp 0.8s forwards ease-in-out;
-}
 
-@keyframes liftUp {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-700px); }
-}
-.lift-down {
-    animation: liftDown 0.8s forwards ease-in-out;
-}
 
-@keyframes liftDown {
-    0% { transform: translateY(-700px); }
-    100% { transform: translateY(0); }
-}
+/*.lift-up {*/
+/*    animation: liftUp 0.8s forwards ease-in-out;*/
+/*}*/
+
+/*@keyframes liftUp {*/
+/*    0% { transform: translateY(0); }*/
+/*    100% { transform: translateY(-700px); }*/
+/*}*/
+/*.lift-down {*/
+/*    animation: liftDown 0.8s forwards ease-in-out;*/
+/*}*/
+
+/*@keyframes liftDown {*/
+/*    0% { transform: translateY(-700px); }*/
+/*    100% { transform: translateY(0); }*/
+/*}*/
 /*----------------------MEDIA----------------------*/
 @media screen and (max-width: 1350px) {
     .info__wrap{
@@ -235,7 +241,7 @@ img{
         width: 50%;
     }
 
-   .commectial__wrap img{
+   .commertial__wrap img{
         /*width: 95%;*/
         height: auto;
         object-fit: cover;
@@ -259,7 +265,7 @@ img{
         top: 168px;
     }
 
-    .commectial__wrap {
+    .commertial__wrap {
         left: 0;
     }
 
@@ -426,12 +432,12 @@ img{
         height: 201px;
     }
 
-    .commectial__wrap{
+    .commertial__wrap{
         left: -388px;
         bottom: 0;
         top: 36.6%;
     }
-    .commectial__wrap img{
+    .commertial__wrap img{
         width: 783px;
         object-fit: cover;
     }
